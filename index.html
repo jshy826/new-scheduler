@@ -4,28 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TodoList Memo</title>
 </head>
 <body>
-    <form id="login-form" class="hidden">
-        <input required maxlength="15" type="text" placeholder="What is your name?" />
-        <button>Log In</button>
-    </form>
-    
-    <h1 id="greeting" class="hidden"></h1>
-    <h2 id="clock">00:00:00</h2>
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list">
+    <div class="bg-div">
+        <div class="div-logout hidden">
+            <button id="logout">logout</button>
+        </div>
+        <div id="weather">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         
-    </ul>
+        
+        
+        <h2 id="clock">00:00:00</h2>
+        <div class="form-div">
+            <form id="login-form" class="hidden login-form">
+                <input required maxlength="15" type="text" placeholder="What is your name?" autofocus="autofocus" />
+                <button class="login-btn"><span>Login </span></button>
+            </form>
+        </div>
+        <h1 id="greeting" class="hidden"></h1>
+        <div class="todo">
+            <form id="todo-form">
+                <input type="text" placeholder="Write a To Do and Press Enter" required />
+            </form>
+        </div>
+        <div class="div-todolist">
+            <ul id="todo-list">
+                
+            </ul>
+        </div>
+        
+        
 
-    <div id="quote">
-        <span></span>
-        <span></span>
-        <span></span>
+        <footer class="quote-footer">
+            <div id="quote">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </footer>
     </div>
+    
 </body>
 
     <script src="js/greeting.js"></script>
@@ -33,4 +57,5 @@
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
 </html>
